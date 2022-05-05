@@ -4,7 +4,7 @@
   </h1> 
   
   [![Linkedin: Phanurut Kondo](https://img.shields.io/badge/-Phanurut_Kondo-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/phanurut-kondo/)](https://www.linkedin.com/in/phanurut-kondo/)
-  [![GitHub Hiroki](https://img.shields.io/github/followers/kondohiroki?label=follow&style=social)](https://github.com/kondohiroki)
+  [![GitHub Phanurut](https://img.shields.io/github/followers/kondohiroki?label=follow&style=social)](https://github.com/kondohiroki)
   ![Profile views](https://gpvc.arturio.dev/kondohiroki)
 </div>
 
@@ -24,7 +24,7 @@
 
 </br>
 <div align="left">
-  <img align="center" src="https://github-readme-stats.vercel.app/api?username=kondohiroki&include_all_commits=true&count_private=true&show_icons=true&theme=radical" alt="Hiroki's GitHub stats">
+  <img align="center" src="https://github-readme-stats.vercel.app/api?username=kondohiroki&include_all_commits=true&count_private=true&show_icons=true&theme=radical" alt="Phanurut's GitHub stats">
 </div>
 
 </br>
