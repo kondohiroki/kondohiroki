@@ -1,5 +1,9 @@
 ### Hi there 👋
 
+
+[![spotify-github-profile](https://spotify-github-profile.vercel.app/api/view?uid=t6uw4iep1t4xfl0pc7cjgvp1q&cover_image=true&theme=default&bar_color=53b14f&bar_color_cover=true)](https://spotify-github-profile.vercel.app/api/view?uid=t6uw4iep1t4xfl0pc7cjgvp1q&redirect=true)
+
+
 <!--
 **kondohiroki/kondohiroki** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
