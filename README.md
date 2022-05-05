@@ -1,6 +1,6 @@
 
 <div align="left">
-  <img src="https://user-images.githubusercontent.com/49369000/166978626-943c3986-4dab-4213-bffc-f1693958ca29.gif" width="100%"> 
+<!--   <img src="https://user-images.githubusercontent.com/49369000/166978626-943c3986-4dab-4213-bffc-f1693958ca29.gif" width="100%">  -->
   <h1> 
     Hi <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px"> , I'm Ki
   </h1> 
