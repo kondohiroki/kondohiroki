@@ -1,8 +1,6 @@
-### Hi there 👋
+<!-- ![Profile views](https://gpvc.arturio.dev/kondohiroki) -->
 
-
-[![spotify-github-profile](https://spotify-github-profile.vercel.app/api/view?uid=t6uw4iep1t4xfl0pc7cjgvp1q&cover_image=true&theme=default&bar_color=53b14f&bar_color_cover=true)](https://spotify-github-profile.vercel.app/api/view?uid=t6uw4iep1t4xfl0pc7cjgvp1q&redirect=true)
-
+![Hiroki Kondo's GitHub stats](https://github-readme-stats.vercel.app/api?username=kondohiroki&show_icons=true&theme=radical)
 
 <!--
 **kondohiroki/kondohiroki** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
@@ -18,3 +16,5 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+
+[![spotify-github-profile](https://spotify-github-profile.vercel.app/api/view?uid=t6uw4iep1t4xfl0pc7cjgvp1q&cover_image=true&theme=default&bar_color=53b14f&bar_color_cover=true)](https://spotify-github-profile.vercel.app/api/view?uid=t6uw4iep1t4xfl0pc7cjgvp1q&redirect=true)
