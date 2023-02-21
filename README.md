@@ -29,6 +29,6 @@
   <img align="center" src="https://github-readme-stats.vercel.app/api?username=kondohiroki&include_all_commits=true&count_private=true&show_icons=true&theme=radical" alt="Phanurut's GitHub stats">
 </div>
 
-</br>
 
-[![spotify-github-profile](https://spotify-github-profile.vercel.app/api/view?uid=t6uw4iep1t4xfl0pc7cjgvp1q&cover_image=true&theme=default&bar_color=53b14f&bar_color_cover=true)](https://spotify-github-profile.vercel.app/api/view?uid=t6uw4iep1t4xfl0pc7cjgvp1q&redirect=true)
+## Tech Stack
+[![My Skills](https://skillicons.dev/icons?i=go,laravel,nodejs,vue)](https://skillicons.dev)
