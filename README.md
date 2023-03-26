@@ -13,7 +13,7 @@
 </br>
 
 - 😎 I'm a Full Stack Developer 
-- 🔭 I’m currently working on (Vue + Laravel)
+- 🔭 I’m currently working on (Golang)
 - 🇹🇭 I'm Thai & Japanese
 - 🚶‍♂️ I'm living in Bangkok, Thailand
 <!-- - 🌱 I’m currently learning  -->
