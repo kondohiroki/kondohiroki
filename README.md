@@ -11,9 +11,11 @@
 </div>
 
 </br>
+  
+
 
 - 😎 I'm a Full Stack Developer 
-- 🔭 I’m currently working on (Golang)
+- 🔭 I’m currently working on (Go)
 - 🇹🇭 I'm Thai & Japanese
 - 🚶‍♂️ I'm living in Bangkok, Thailand
 <!-- - 🌱 I’m currently learning  -->
@@ -27,6 +29,11 @@
 </br>
 <div align="left">
   <img align="center" src="https://github-readme-stats.vercel.app/api?username=kondohiroki&include_all_commits=true&count_private=true&show_icons=true&theme=radical" alt="Phanurut's GitHub stats">
+</div>
+
+</br>
+<div align="left">
+<img src="https://github.com/kondohiroki/kondohiroki/assets/49369000/36007ecc-68bc-4f04-83b0-0248a225a7ea" />
 </div>
 
 
