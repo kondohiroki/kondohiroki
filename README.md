@@ -5,9 +5,9 @@
     Hi <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px"> , I'm Ki
   </h1> 
   
-  [![Linkedin: Phanurut Kondo](https://img.shields.io/badge/-Phanurut_Kondo-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/phanurut-kondo/)](https://www.linkedin.com/in/phanurut-kondo/)
+  [![Linkedin: Phanurut Kondo](https://img.shields.io/badge/-Phanurut_Kondo-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/phanurut-kd/)](https://www.linkedin.com/in/phanurut-kd/)
   [![GitHub Phanurut](https://img.shields.io/github/followers/kondohiroki?label=follow&style=social)](https://github.com/kondohiroki)
-  ![Profile views](https://gpvc.arturio.dev/kondohiroki)
+  ![Profile views](https://komarev.com/ghpvc/?username=kondohiroki)
 </div>
 
 </br>
