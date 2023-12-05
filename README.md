@@ -38,4 +38,4 @@
 
 
 ## Tech Stack
-[![My Skills](https://skillicons.dev/icons?i=go,laravel,nodejs,vue,postgres,postman,docker,nginx,redis,mongo,vscode)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=go,postgres,postman,docker,nginx,redis,mongo,vscode)](https://skillicons.dev)
