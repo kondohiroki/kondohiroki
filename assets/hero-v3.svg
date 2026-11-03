@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="380" viewBox="0 0 1200 380" role="img" aria-label="Ki — AI-native SDLC. Agents branch off main, work in parallel, and merge back after a human review.">
+  <defs>
+    <radialGradient id="glowbg" cx="0.78" cy="0.55" r="0.55">
+      <stop offset="0" stop-color="#10b981" stop-opacity=".16"/>
+      <stop offset="1" stop-color="#10b981" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ink" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ecfdf5"/>
+      <stop offset="1" stop-color="#6ee7b7"/>
+    </linearGradient>
+    <clipPath id="wipe">
+      <rect class="wiper" x="40" y="60" width="640" height="200"/>
+    </clipPath>
+    <filter id="bloom" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="1" fill="#10b981" fill-opacity=".12"/>
+    </pattern>
+  </defs>
+  <style>
+    .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+
+    /* one-time headline reveal: outline first, then the fill wipes in */
+    .wiper { transform: scaleX(0); transform-origin: 40px 0; animation: wipe 1.4s cubic-bezier(.7,0,.2,1) .5s forwards; }
+    @keyframes wipe { to { transform: scaleX(1); } }
+    .rise { opacity: 0; animation: rise .8s cubic-bezier(.2,.8,.2,1) forwards; }
+    .r1 { animation-delay: 1.5s; } .r2 { animation-delay: 1.75s; }
+    @keyframes rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+
+    /* the git graph: one 10s loop */
+    .draw { stroke-dasharray: 1; stroke-dashoffset: 1; animation: 10s linear infinite; }
+    .main { animation-name: dMain; }
+    .b1 { animation-name: dB1; } .b2 { animation-name: dB2; } .b3 { animation-name: dB3; }
+    @keyframes dMain { 0% { stroke-dashoffset: 1; } 10%, 92% { stroke-dashoffset: 0; opacity: 1; } 100% { stroke-dashoffset: 0; opacity: 0; } }
+    @keyframes dB1 { 0%, 14% { stroke-dashoffset: 1; } 58%, 92% { stroke-dashoffset: 0; opacity: 1; } 100% { stroke-dashoffset: 0; opacity: 0; } }
+    @keyframes dB2 { 0%, 18% { stroke-dashoffset: 1; } 62%, 92% { stroke-dashoffset: 0; opacity: 1; } 100% { stroke-dashoffset: 0; opacity: 0; } }
+    @keyframes dB3 { 0%, 22% { stroke-dashoffset: 1; } 66%, 92% { stroke-dashoffset: 0; opacity: 1; } 100% { stroke-dashoffset: 0; opacity: 0; } }
+
+    .pop { opacity: 0; transform-box: fill-box; transform-origin: center; animation: 10s cubic-bezier(.3,1.6,.5,1) infinite; }
+    @keyframes c11 { 0%, 33% { opacity: 0; transform: scale(0); } 35%, 92% { opacity: 1; transform: scale(1); } 100% { opacity: 0; } }
+    @keyframes c12 { 0%, 37% { opacity: 0; transform: scale(0); } 39%, 92% { opacity: 1; transform: scale(1); } 100% { opacity: 0; } }
+    @keyframes c13 { 0%, 40% { opacity: 0; transform: scale(0); } 42%, 92% { opacity: 1; transform: scale(1); } 100% { opacity: 0; } }
+    @keyframes c21 { 0%, 37% { opacity: 0; transform: scale(0); } 39%, 92% { opacity: 1; transform: scale(1); } 100% { opacity: 0; } }
+    @keyframes c22 { 0%, 41% { opacity: 0; transform: scale(0); } 43%, 92% { opacity: 1; transform: scale(1); } 100% { opacity: 0; } }
+    @keyframes c23 { 0%, 45% { opacity: 0; transform: scale(0); } 47%, 92% { opacity: 1; transform: scale(1); } 100% { opacity: 0; } }
+    @keyframes c31 { 0%, 39% { opacity: 0; transform: scale(0); } 41%, 92% { opacity: 1; transform: scale(1); } 100% { opacity: 0; } }
+    @keyframes c32 { 0%, 45% { opacity: 0; transform: scale(0); } 47%, 92% { opacity: 1; transform: scale(1); } 100% { opacity: 0; } }
+    @keyframes c33 { 0%, 51% { opacity: 0; transform: scale(0); } 53%, 92% { opacity: 1; transform: scale(1); } 100% { opacity: 0; } }
+    @keyframes gate1 { 0%, 8% { opacity: 0; transform: scale(0); } 11%, 92% { opacity: 1; transform: scale(1); } 100% { opacity: 0; } }
+    @keyframes merge { 0%, 68% { opacity: 0; transform: scale(0); } 71%, 92% { opacity: 1; transform: scale(1); } 100% { opacity: 0; } }
+
+    .fade { opacity: 0; animation: 10s ease infinite; }
+    @keyframes l1 { 0%, 15% { opacity: 0; } 20%, 92% { opacity: 1; } 100% { opacity: 0; } }
+    @keyframes l2 { 0%, 19% { opacity: 0; } 24%, 92% { opacity: 1; } 100% { opacity: 0; } }
+    @keyframes l3 { 0%, 23% { opacity: 0; } 28%, 92% { opacity: 1; } 100% { opacity: 0; } }
+    @keyframes lg1 { 0%, 9% { opacity: 0; } 13%, 92% { opacity: 1; } 100% { opacity: 0; } }
+    @keyframes lm { 0%, 72% { opacity: 0; } 77%, 92% { opacity: 1; } 100% { opacity: 0; } }
+
+    .ring { opacity: 0; transform-box: fill-box; transform-origin: center; animation: ring 10s ease-out infinite; }
+    @keyframes ring { 0%, 70% { opacity: 0; transform: scale(1); } 71% { opacity: .9; transform: scale(1); } 86%, 100% { opacity: 0; transform: scale(3.2); } }
+
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; }
+      .wiper, .pop { transform: none; } .rise, .pop, .fade { opacity: 1; } .draw { stroke-dashoffset: 0; } .ring { opacity: 0; }
+    }
+  </style>
+
+  <rect width="1200" height="380" rx="24" fill="#03110c"/>
+  <rect width="1200" height="380" rx="24" fill="url(#dots)"/>
+  <rect width="1200" height="380" rx="24" fill="url(#glowbg)"/>
+  <rect x=".5" y=".5" width="1199" height="379" rx="24" fill="none" stroke="#10b981" stroke-opacity=".28"/>
+
+  <!-- headline -->
+  <text class="sans" x="64" y="70" font-size="17" font-weight="600" fill="#5b7a6e">Ki <tspan fill="#10b981">/</tspan> Bangkok</text>
+  <g class="sans" font-size="104" font-weight="900" letter-spacing="-4">
+    <text x="58" y="168" fill="none" stroke="#10b981" stroke-opacity=".55" stroke-width="1.5">AI-native</text>
+    <text x="58" y="262" fill="none" stroke="#10b981" stroke-opacity=".55" stroke-width="1.5">SDLC</text>
+    <g clip-path="url(#wipe)" fill="url(#ink)">
+      <text x="58" y="168">AI-native</text>
+      <text x="58" y="262">SDLC</text>
+    </g>
+  </g>
+  <text class="sans rise r1" x="64" y="314" font-size="22" fill="#d1fae5">I ship software with a team of agents.</text>
+  <text class="sans rise r2" x="64" y="344" font-size="17" fill="#5b7a6e">I set the intent and hold the bar. They do the rest.</text>
+
+  <!-- git graph -->
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path class="draw main" pathLength="1" d="M700 300 H1160" stroke="#5b7a6e" stroke-width="3"/>
+    <path class="draw b1" pathLength="1" d="M760 300 C 800 300 790 96 836 96 H1004 C 1050 96 1040 300 1080 300" stroke="#6ee7b7" stroke-width="3"/>
+    <path class="draw b2" pathLength="1" d="M760 300 C 800 300 790 164 836 164 H1004 C 1050 164 1040 300 1080 300" stroke="#34d399" stroke-width="3"/>
+    <path class="draw b3" pathLength="1" d="M760 300 C 800 300 790 232 836 232 H1004 C 1050 232 1040 300 1080 300" stroke="#10b981" stroke-width="3"/>
+  </g>
+
+  <g class="mono" font-size="13">
+    <text class="fade" style="animation-name:l1" x="846" y="84" fill="#a7f3d0">api-dev</text>
+    <text class="fade" style="animation-name:l2" x="846" y="152" fill="#a7f3d0">web-dev</text>
+    <text class="fade" style="animation-name:l3" x="846" y="220" fill="#a7f3d0">auditors</text>
+    <text x="700" y="288" fill="#5b7a6e">main</text>
+  </g>
+
+  <!-- commits -->
+  <g fill="#03110c" stroke-width="3">
+    <circle class="pop" style="animation-name:c11" cx="880" cy="96" r="7" stroke="#6ee7b7"/>
+    <circle class="pop" style="animation-name:c12" cx="930" cy="96" r="7" stroke="#6ee7b7"/>
+    <circle class="pop" style="animation-name:c13" cx="980" cy="96" r="7" stroke="#6ee7b7"/>
+    <circle class="pop" style="animation-name:c21" cx="880" cy="164" r="7" stroke="#34d399"/>
+    <circle class="pop" style="animation-name:c22" cx="930" cy="164" r="7" stroke="#34d399"/>
+    <circle class="pop" style="animation-name:c23" cx="980" cy="164" r="7" stroke="#34d399"/>
+    <circle class="pop" style="animation-name:c31" cx="880" cy="232" r="7" stroke="#10b981"/>
+    <circle class="pop" style="animation-name:c32" cx="930" cy="232" r="7" stroke="#10b981"/>
+    <circle class="pop" style="animation-name:c33" cx="980" cy="232" r="7" stroke="#10b981"/>
+  </g>
+
+  <!-- human gates: contract at the fork, review at the merge -->
+  <g class="pop" style="animation-name:gate1">
+    <circle cx="760" cy="300" r="11" fill="#ecfdf5"/>
+    <path d="M755 300 l4 4 l7 -8" fill="none" stroke="#03110c" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text class="sans fade" style="animation-name:lg1" x="760" y="342" font-size="14" font-weight="600" text-anchor="middle" fill="#ecfdf5">you freeze the contract</text>
+
+  <circle class="ring" cx="1080" cy="300" r="14" fill="none" stroke="#6ee7b7" stroke-width="2"/>
+  <g class="pop" style="animation-name:merge" filter="url(#bloom)">
+    <circle cx="1080" cy="300" r="14" fill="#10b981"/>
+    <path d="M1073 300 l5 5 l9 -10" fill="none" stroke="#03110c" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text class="sans fade" style="animation-name:lm" x="1080" y="342" font-size="14" font-weight="600" text-anchor="middle" fill="#ecfdf5">you approve, it ships</text>
+</svg>

@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-label="The delivery pipeline: Spec, Contract (you), Build, Verify, AI review, Ship (you).">
+  <defs>
+    <linearGradient id="fill" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#059669"/>
+      <stop offset="1" stop-color="#6ee7b7"/>
+    </linearGradient>
+    <filter id="bloom" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="1" fill="#10b981" fill-opacity=".1"/>
+    </pattern>
+  </defs>
+  <style>
+    .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    /* 9s loop: the token walks the line; each station lights as it passes */
+    .bar { transform: scaleX(0); transform-origin: 140px 0; animation: bar 9s linear infinite; }
+    @keyframes bar { 0%, 5% { transform: scaleX(0); opacity: 1; } 80%, 92% { transform: scaleX(1); opacity: 1; } 100% { transform: scaleX(1); opacity: 0; } }
+    .token { animation: token 9s linear infinite; }
+    @keyframes token { 0%, 5% { transform: translateX(0); opacity: 1; } 80%, 90% { transform: translateX(920px); opacity: 1; } 96%, 100% { transform: translateX(920px); opacity: 0; } }
+    .on { opacity: 0; animation: 9s ease infinite; }
+    @keyframes s0 { 0%, 4% { opacity: 0; } 7%, 92% { opacity: 1; } 100% { opacity: 0; } }
+    @keyframes s1 { 0%, 19% { opacity: 0; } 22%, 92% { opacity: 1; } 100% { opacity: 0; } }
+    @keyframes s2 { 0%, 34% { opacity: 0; } 37%, 92% { opacity: 1; } 100% { opacity: 0; } }
+    @keyframes s3 { 0%, 49% { opacity: 0; } 52%, 92% { opacity: 1; } 100% { opacity: 0; } }
+    @keyframes s4 { 0%, 64% { opacity: 0; } 67%, 92% { opacity: 1; } 100% { opacity: 0; } }
+    @keyframes s5 { 0%, 79% { opacity: 0; } 82%, 92% { opacity: 1; } 100% { opacity: 0; } }
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; }
+      .bar { transform: none; } .on { opacity: 1; } .token { transform: translateX(920px); }
+    }
+  </style>
+
+  <rect width="1200" height="300" rx="24" fill="#03110c"/>
+  <rect width="1200" height="300" rx="24" fill="url(#dots)"/>
+  <rect x=".5" y=".5" width="1199" height="299" rx="24" fill="none" stroke="#10b981" stroke-opacity=".28"/>
+
+  <text class="sans" x="64" y="62" font-size="24" font-weight="800" fill="#ecfdf5" letter-spacing="-.5">How a change gets to production</text>
+  <text class="sans" x="64" y="90" font-size="16" fill="#5b7a6e">Agents do the work in the middle. A person signs off at both ends.</text>
+
+  <!-- track -->
+  <rect x="140" y="168" width="920" height="4" rx="2" fill="#0c2b20"/>
+  <rect class="bar" x="140" y="168" width="920" height="4" rx="2" fill="url(#fill)"/>
+
+  <!-- stations: agent = circle, you = filled square -->
+  <g fill="#03110c" stroke="#1f4d3c" stroke-width="2">
+    <circle cx="140" cy="170" r="13"/>
+    <rect x="311" y="157" width="26" height="26" rx="6"/>
+    <circle cx="508" cy="170" r="13"/>
+    <circle cx="692" cy="170" r="13"/>
+    <circle cx="876" cy="170" r="13"/>
+    <rect x="1047" y="157" width="26" height="26" rx="6"/>
+  </g>
+  <g fill="#10b981">
+    <circle class="on" style="animation-name:s0" cx="140" cy="170" r="13"/>
+    <rect class="on" style="animation-name:s1" x="311" y="157" width="26" height="26" rx="6" fill="#ecfdf5"/>
+    <circle class="on" style="animation-name:s2" cx="508" cy="170" r="13"/>
+    <circle class="on" style="animation-name:s3" cx="692" cy="170" r="13"/>
+    <circle class="on" style="animation-name:s4" cx="876" cy="170" r="13"/>
+    <rect class="on" style="animation-name:s5" x="1047" y="157" width="26" height="26" rx="6" fill="#ecfdf5"/>
+  </g>
+
+  <g class="token" filter="url(#bloom)">
+    <circle cx="140" cy="170" r="6" fill="#ecfdf5"/>
+  </g>
+
+  <!-- labels -->
+  <g class="sans" text-anchor="middle">
+    <g font-size="17" font-weight="700" fill="#ecfdf5">
+      <text x="140" y="218">Spec</text>
+      <text x="324" y="218">Contract</text>
+      <text x="508" y="218">Build</text>
+      <text x="692" y="218">Verify</text>
+      <text x="876" y="218">AI review</text>
+      <text x="1060" y="218">Ship</text>
+    </g>
+    <g font-size="14" fill="#5b7a6e">
+      <text x="140" y="242">intent to requirements</text>
+      <text x="324" y="242">you freeze the criteria</text>
+      <text x="508" y="242">agents, in parallel</text>
+      <text x="692" y="242">auditors and tests</text>
+      <text x="876" y="242">findings need proof</text>
+      <text x="1060" y="242">you approve the merge</text>
+    </g>
+  </g>
+  <g class="sans" font-size="13" fill="#5b7a6e">
+    <circle cx="1000" cy="58" r="6" fill="#10b981"/><text x="1012" y="63">agent</text>
+    <rect x="1062" y="52" width="12" height="12" rx="3" fill="#ecfdf5"/><text x="1080" y="63">you</text>
+  </g>
+</svg>

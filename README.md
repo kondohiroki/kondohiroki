@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/hero.svg" width="100%" alt="Ki — AI-Native SDLC" />
+<img src="./assets/hero-v3.svg" width="100%" alt="Ki — AI-Native SDLC" />
 
 <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&pause=900&color=34D399&center=true&vCenter=true&width=760&lines=Humans+set+intent.+Agents+do+the+work.;Contract-first+%E2%86%92+agents+build+%E2%86%92+auditors+verify;AI+review+with+evidence%2C+not+vibes;Go+%C2%B7+TypeScript+%C2%B7+Cloudflare+Workers;%E3%81%93%E3%82%93%E3%81%AB%E3%81%A1%E3%81%AF+%C2%B7+%E0%B8%AA%E0%B8%A7%E0%B8%B1%E0%B8%AA%E0%B8%94%E0%B8%B5+%C2%B7+Hello+%F0%9F%91%8B" alt="Typing SVG" /></a>
 
@@ -26,22 +26,13 @@ stack:     [Go, TypeScript, Cloudflare Workers, React]
 belief:    "The agent writes the code. The human owns the intent and the bar."
 ```
 
-### 🔁 The AI-Native SDLC loop
+### 🔁 How I ship
 
-<img src="./assets/sdlc-loop.svg" width="100%" alt="Spec → Contract → Agents build → Verify → AI review → Ship" />
-
-| Stage | What happens | Who |
-| :-- | :-- | :-- |
-| **Spec** | Turn intent into concrete requirements | 🧑 + 🤖 |
-| **Contract** | Freeze acceptance criteria *before* any code | 🤖, signed off by 🧑 |
-| **Build** | Specialist agents work in parallel, each in its own worktree | 🤖🤖🤖 |
-| **Verify** | Auditors check permissions, cost, schema, compat; tests and UI QA run | 🤖 |
-| **AI review** | Every finding needs a proof path — evidence, not vibes | 🤖 |
-| **Ship** | A human gives the final 👍, then deploy, observe, learn | 🧑 |
+<img src="./assets/pipeline-v3.svg" width="100%" alt="Spec → Contract (you) → Build → Verify → AI review → Ship (you)" />
 
 ### ⌨️ A day in the terminal
 
-<img src="./assets/terminal.svg" width="100%" alt="An agentic coding session" />
+<img src="./assets/terminal-v3.svg" width="100%" alt="An agentic coding session" />
 
 ### 🛠️ Tech stack
 
