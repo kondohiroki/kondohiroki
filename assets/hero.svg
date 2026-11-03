@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-label="Ki — AI-Native SDLC">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#05060f"/>
+      <stop offset="1" stop-color="#0b1026"/>
+    </linearGradient>
+    <linearGradient id="title" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22d3ee">
+        <animate attributeName="stop-color" values="#22d3ee;#a78bfa;#34d399;#22d3ee" dur="8s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="0.5" stop-color="#a78bfa">
+        <animate attributeName="stop-color" values="#a78bfa;#34d399;#22d3ee;#a78bfa" dur="8s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="1" stop-color="#34d399">
+        <animate attributeName="stop-color" values="#34d399;#22d3ee;#a78bfa;#34d399" dur="8s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+    <radialGradient id="orb" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#a78bfa" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#a78bfa" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orb2" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#1e293b" stroke-width="1"/>
+    </pattern>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="card"><rect width="1200" height="320" rx="20"/></clipPath>
+  </defs>
+  <style>
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; }
+    .sans { font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; }
+    .grid { animation: drift 12s linear infinite; }
+    @keyframes drift { from { transform: translate(0,0); } to { transform: translate(-32px,-32px); } }
+    .orb { animation: float 9s ease-in-out infinite; transform-origin: center; }
+    .orb2 { animation: float 11s ease-in-out infinite reverse; }
+    @keyframes float { 0%,100% { transform: translate(0,0); } 50% { transform: translate(40px,-20px); } }
+    .type { clip-path: inset(0 100% 0 0); animation: type 2.4s steps(30) 0.4s forwards; }
+    @keyframes type { to { clip-path: inset(0 0 0 0); } }
+    .caret { animation: blink 1s steps(1) infinite; }
+    @keyframes blink { 50% { opacity: 0; } }
+    .fade { opacity: 0; animation: fadeup 0.8s ease-out forwards; }
+    .d1 { animation-delay: 1.0s; } .d2 { animation-delay: 1.6s; } .d3 { animation-delay: 2.2s; } .d4 { animation-delay: 2.8s; }
+    @keyframes fadeup { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+    .scan { animation: scan 4s linear infinite; }
+    @keyframes scan { from { transform: translateY(-40px); } to { transform: translateY(360px); } }
+    .node { animation: pulse 2.4s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+    .n2 { animation-delay: .4s; } .n3 { animation-delay: .8s; } .n4 { animation-delay: 1.2s; } .n5 { animation-delay: 1.6s; }
+    @keyframes pulse { 0%,100% { opacity: .35; transform: scale(1); } 50% { opacity: 1; transform: scale(1.35); } }
+    .wire { stroke-dasharray: 6 10; animation: flow 1.6s linear infinite; }
+    @keyframes flow { to { stroke-dashoffset: -32; } }
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; }
+      .type, .fade { clip-path: none; opacity: 1; }
+    }
+  </style>
+
+  <g clip-path="url(#card)">
+    <rect width="1200" height="320" fill="url(#bg)"/>
+    <g class="grid"><rect x="0" y="0" width="1264" height="384" fill="url(#grid)" opacity="0.6"/></g>
+    <circle class="orb" cx="960" cy="90" r="220" fill="url(#orb)"/>
+    <circle class="orb2" cx="760" cy="300" r="200" fill="url(#orb2)"/>
+    <rect class="scan" x="0" y="0" width="1200" height="40" fill="#22d3ee" opacity="0.04"/>
+
+    <!-- left: identity -->
+    <g transform="translate(64,70)">
+      <text class="mono fade" x="0" y="0" font-size="16" fill="#64748b">~/kondohiroki <tspan fill="#34d399">❯</tspan> whoami</text>
+      <g class="type">
+        <text class="sans" x="0" y="66" font-size="58" font-weight="800" fill="url(#title)" letter-spacing="-1">AI-Native SDLC</text>
+      </g>
+      <text class="sans fade d1" x="2" y="112" font-size="22" fill="#e2e8f0">Hi, I'm <tspan font-weight="700" fill="#fff">Ki</tspan> — I ship software with a team of agents.</text>
+      <text class="mono fade d2" x="2" y="152" font-size="15" fill="#94a3b8">spec → contract → agents build → auditors verify → AI review → ship</text>
+      <g transform="translate(2,182)"><g class="fade d3">
+        <rect width="176" height="30" rx="15" fill="#0f172a" stroke="#334155"/>
+        <circle cx="18" cy="15" r="5" fill="#34d399" class="node"/>
+        <text class="mono" x="32" y="20" font-size="13" fill="#cbd5e1">agentic coding</text>
+        <rect x="188" width="160" height="30" rx="15" fill="#0f172a" stroke="#334155"/>
+        <text class="mono" x="204" y="20" font-size="13" fill="#cbd5e1">📍 Bangkok, TH</text>
+        <rect x="360" width="150" height="30" rx="15" fill="#0f172a" stroke="#334155"/>
+        <text class="mono" x="376" y="20" font-size="13" fill="#cbd5e1">🇹🇭 × 🇯🇵</text>
+      </g></g>
+    </g>
+
+    <!-- right: agent mesh -->
+    <g transform="translate(840,70)" filter="url(#glow)">
+      <path class="wire" d="M120 90 L30 20 M120 90 L230 20 M120 90 L20 170 M120 90 L240 170 M120 90 L130 200" stroke="#a78bfa" stroke-width="2" fill="none" opacity="0.7"/>
+      <path class="wire" d="M30 20 L230 20 M20 170 L130 200 L240 170" stroke="#22d3ee" stroke-width="1.5" fill="none" opacity="0.5"/>
+      <circle cx="120" cy="90" r="26" fill="#0f172a" stroke="#a78bfa" stroke-width="2"/>
+      <text class="mono" x="120" y="96" font-size="16" text-anchor="middle" fill="#e9d5ff">✦</text>
+      <circle class="node" cx="30" cy="20" r="9" fill="#22d3ee"/>
+      <circle class="node n2" cx="230" cy="20" r="9" fill="#34d399"/>
+      <circle class="node n3" cx="20" cy="170" r="9" fill="#f472b6"/>
+      <circle class="node n4" cx="240" cy="170" r="9" fill="#fbbf24"/>
+      <circle class="node n5" cx="130" cy="200" r="9" fill="#60a5fa"/>
+      <text class="mono" x="30" y="-2" font-size="11" text-anchor="middle" fill="#67e8f9">plan</text>
+      <text class="mono" x="230" y="-2" font-size="11" text-anchor="middle" fill="#6ee7b7">build</text>
+      <text class="mono" x="20" y="196" font-size="11" text-anchor="middle" fill="#f9a8d4">test</text>
+      <text class="mono" x="240" y="196" font-size="11" text-anchor="middle" fill="#fcd34d">review</text>
+      <text class="mono" x="130" y="226" font-size="11" text-anchor="middle" fill="#93c5fd">ship</text>
+    </g>
+  </g>
+  <rect x="0.5" y="0.5" width="1199" height="319" rx="20" fill="none" stroke="#1e293b"/>
+</svg>

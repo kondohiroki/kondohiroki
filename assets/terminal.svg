@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-label="An agentic coding session in a terminal">
+  <style>
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 15px; }
+    .l { opacity: 0; animation: show 14s steps(1) infinite; }
+    @keyframes show { 0% { opacity: 0; } 100% { opacity: 1; } }
+    .l1 { animation-name: a1; } .l2 { animation-name: a2; } .l3 { animation-name: a3; } .l4 { animation-name: a4; }
+    .l5 { animation-name: a5; } .l6 { animation-name: a6; } .l7 { animation-name: a7; } .l8 { animation-name: a8; }
+    .l9 { animation-name: a9; } .l10 { animation-name: a10; }
+    @keyframes a1  { 0%, 3%  { opacity: 0; } 4%, 96%  { opacity: 1; } 97%, 100% { opacity: 0; } }
+    @keyframes a2  { 0%, 12% { opacity: 0; } 13%, 96% { opacity: 1; } 97%, 100% { opacity: 0; } }
+    @keyframes a3  { 0%, 20% { opacity: 0; } 21%, 96% { opacity: 1; } 97%, 100% { opacity: 0; } }
+    @keyframes a4  { 0%, 28% { opacity: 0; } 29%, 96% { opacity: 1; } 97%, 100% { opacity: 0; } }
+    @keyframes a5  { 0%, 36% { opacity: 0; } 37%, 96% { opacity: 1; } 97%, 100% { opacity: 0; } }
+    @keyframes a6  { 0%, 44% { opacity: 0; } 45%, 96% { opacity: 1; } 97%, 100% { opacity: 0; } }
+    @keyframes a7  { 0%, 54% { opacity: 0; } 55%, 96% { opacity: 1; } 97%, 100% { opacity: 0; } }
+    @keyframes a8  { 0%, 64% { opacity: 0; } 65%, 96% { opacity: 1; } 97%, 100% { opacity: 0; } }
+    @keyframes a9  { 0%, 74% { opacity: 0; } 75%, 96% { opacity: 1; } 97%, 100% { opacity: 0; } }
+    @keyframes a10 { 0%, 84% { opacity: 0; } 85%, 96% { opacity: 1; } 97%, 100% { opacity: 0; } }
+    .typing { clip-path: inset(0 100% 0 0); animation: type 14s steps(44) infinite; }
+    @keyframes type { 0% { clip-path: inset(0 100% 0 0); } 3%, 96% { clip-path: inset(0 0 0 0); } 97%, 100% { clip-path: inset(0 100% 0 0); } }
+    .caret { animation: blink 1s steps(1) infinite; }
+    @keyframes blink { 50% { opacity: 0; } }
+    .spin { animation: spin 1s linear infinite; transform-box: fill-box; transform-origin: center; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; }
+      .l { opacity: 1; } .typing { clip-path: none; }
+    }
+  </style>
+
+  <rect width="1200" height="360" rx="16" fill="#0a0e1a"/>
+  <rect x="0.5" y="0.5" width="1199" height="359" rx="16" fill="none" stroke="#1e293b"/>
+  <path d="M0 16 a16 16 0 0 1 16 -16 H1184 a16 16 0 0 1 16 16 V40 H0 Z" fill="#111827"/>
+  <circle cx="24" cy="20" r="6" fill="#f87171"/>
+  <circle cx="44" cy="20" r="6" fill="#fbbf24"/>
+  <circle cx="64" cy="20" r="6" fill="#34d399"/>
+  <text class="mono" x="600" y="25" text-anchor="middle" fill="#64748b" font-size="13">ki@bangkok — agent session</text>
+
+  <g transform="translate(28,76)">
+    <g class="typing">
+      <text class="mono" x="0" y="0" fill="#e2e8f0"><tspan fill="#34d399">❯</tspan> ship the feature — contract first, then build it</text>
+    </g>
+
+    <text class="mono l l2" x="0" y="30" fill="#a78bfa">✦ contract frozen  <tspan fill="#64748b">· 7 acceptance criteria · risk: medium</tspan></text>
+    <text class="mono l l3" x="0" y="56" fill="#67e8f9">⎇ spawning agents  <tspan fill="#64748b">· api-dev  web-dev  test-generator</tspan></text>
+    <text class="mono l l4" x="22" y="82" fill="#cbd5e1">├─ api-dev    <tspan fill="#34d399">✔</tspan> routes + migrations + tests</text>
+    <text class="mono l l5" x="22" y="108" fill="#cbd5e1">├─ web-dev    <tspan fill="#34d399">✔</tspan> UI verified in light + dark</text>
+    <text class="mono l l6" x="22" y="134" fill="#cbd5e1">└─ auditors   <tspan fill="#34d399">✔</tspan> permissions · cost · schema · compat</text>
+    <text class="mono l l7" x="0" y="164" fill="#fbbf24">◎ AI review    <tspan fill="#64748b">· 0 blocking findings on current head</tspan></text>
+    <text class="mono l l8" x="0" y="190" fill="#f9a8d4">▲ CI           <tspan fill="#34d399">green</tspan><tspan fill="#64748b"> · typecheck · lint · unit · e2e</tspan></text>
+    <text class="mono l l9" x="0" y="220" fill="#6ee7b7">🚀 ready to merge  <tspan fill="#64748b">· a human gives the final 👍</tspan></text>
+    <g class="l l10">
+      <text class="mono" x="0" y="256" fill="#e2e8f0"><tspan fill="#34d399">❯</tspan> </text>
+      <rect class="caret" x="20" y="242" width="9" height="18" fill="#22d3ee"/>
+    </g>
+  </g>
+</svg>

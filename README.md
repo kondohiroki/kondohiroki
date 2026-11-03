@@ -1,41 +1,62 @@
+<div align="center">
 
-<div align="left">
-<!--   <img src="https://user-images.githubusercontent.com/49369000/166978626-943c3986-4dab-4213-bffc-f1693958ca29.gif" width="100%">  -->
-  <h1> 
-    Hi <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px"> , I'm Ki
-  </h1> 
-  
-  [![Linkedin: Phanurut Kondo](https://img.shields.io/badge/-Phanurut_Kondo-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/phanurut-kd/)](https://www.linkedin.com/in/phanurut-kd/)
-  [![GitHub Phanurut](https://img.shields.io/github/followers/kondohiroki?label=follow&style=social)](https://github.com/kondohiroki)
-  ![Profile views](https://komarev.com/ghpvc/?username=kondohiroki)
+<img src="./assets/hero.svg" width="100%" alt="Ki — AI-Native SDLC" />
+
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&pause=900&color=22D3EE&center=true&vCenter=true&width=760&lines=Humans+set+intent.+Agents+do+the+work.;Contract-first+%E2%86%92+agents+build+%E2%86%92+auditors+verify;AI+review+with+evidence%2C+not+vibes;Go+%C2%B7+TypeScript+%C2%B7+Cloudflare+Workers;%E3%81%93%E3%82%93%E3%81%AB%E3%81%A1%E3%81%AF+%C2%B7+%E0%B8%AA%E0%B8%A7%E0%B8%B1%E0%B8%AA%E0%B8%94%E0%B8%B5+%C2%B7+Hello+%F0%9F%91%8B" alt="Typing SVG" /></a>
+
+<p>
+  <a href="https://www.linkedin.com/in/phanurut-kd/"><img src="https://img.shields.io/badge/LinkedIn-Phanurut_Kondo-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+  <a href="https://bento.me/kdhiroki"><img src="https://img.shields.io/badge/bento-kdhiroki-111827?style=for-the-badge&logo=linktree&logoColor=white" alt="bento" /></a>
+  <a href="https://github.com/kondohiroki"><img src="https://img.shields.io/github/followers/kondohiroki?label=follow&style=for-the-badge&logo=github&color=7c3aed" alt="GitHub followers" /></a>
+  <img src="https://komarev.com/ghpvc/?username=kondohiroki&style=for-the-badge&color=22d3ee&label=views" alt="Profile views" />
+</p>
+
 </div>
 
-</br>
-  
+---
 
+### 🧬 `whoami`
 
-- 😎 I'm a Full Stack Developer 
-- 🔭 I’m currently working on (Go)
-- 🇹🇭 I'm Thai & Japanese
-- 🚶‍♂️ I'm living in Bangkok, Thailand
-<!-- - 🌱 I’m currently learning  -->
-<!-- - 👯 I’m looking to collaborate on ... -->
-<!-- - 🤔 I’m looking for help with ... -->
-<!-- - 💬 Ask me about ... -->
-<!-- - 📫 How to reach me: ... -->
-<!-- - 😄 Pronouns: ... -->
-<!-- - ⚡ Fun fact: ... -->
+```yaml
+name:      Ki (Phanurut Kondo)
+based_in:  Bangkok, Thailand 🇹🇭 × 🇯🇵
+work:      Bluebik Group PLC. · Orbit Digital
+focus:     AI-Native SDLC — agentic coding, end to end
+stack:     [Go, TypeScript, Cloudflare Workers, React]
+belief:    "The agent writes the code. The human owns the intent and the bar."
+```
 
-</br>
-<div align="left">
-  <img align="center" src="https://github-readme-stats.vercel.app/api?username=kondohiroki&include_all_commits=true&count_private=true&show_icons=true&theme=radical" alt="Phanurut's GitHub stats">
+### 🔁 The AI-Native SDLC loop
+
+<img src="./assets/sdlc-loop.svg" width="100%" alt="Spec → Contract → Agents build → Verify → AI review → Ship" />
+
+| Stage | What happens | Who |
+| :-- | :-- | :-- |
+| **Spec** | Turn intent into concrete requirements | 🧑 + 🤖 |
+| **Contract** | Freeze acceptance criteria *before* any code | 🤖, signed off by 🧑 |
+| **Build** | Specialist agents work in parallel, each in its own worktree | 🤖🤖🤖 |
+| **Verify** | Auditors check permissions, cost, schema, compat; tests and UI QA run | 🤖 |
+| **AI review** | Every finding needs a proof path — evidence, not vibes | 🤖 |
+| **Ship** | A human gives the final 👍, then deploy, observe, learn | 🧑 |
+
+### ⌨️ A day in the terminal
+
+<img src="./assets/terminal.svg" width="100%" alt="An agentic coding session" />
+
+### 🛠️ Tech stack
+
+<p align="center">
+  <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=go,ts,nodejs,react,vite,cloudflare,workers,docker,kubernetes,postgres,redis,rabbitmq,linux,githubactions,gitlab,bash&perline=8" alt="Tech stack" /></a>
+</p>
+
+### 📈 Activity
+
+<p align="center">
+  <img src="https://streak-stats.demolab.com?user=kondohiroki&theme=tokyonight&hide_border=true&background=0B1026&ring=A78BFA&fire=22D3EE&currStreakLabel=22D3EE" alt="GitHub streak" />
+</p>
+
+<div align="center">
+
+<sub>Built with agents, reviewed by a human. ✦</sub>
+
 </div>
-
-</br>
-<div align="left">
-<img src="https://github.com/kondohiroki/kondohiroki/assets/49369000/36007ecc-68bc-4f04-83b0-0248a225a7ea" />
-</div>
-
-
-## Tech Stack
-[![My Skills](https://skillicons.dev/icons?i=go,go,go,go,go,go,go,go,go,go,go,go,go,go,go)](https://skillicons.dev)

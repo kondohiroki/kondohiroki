@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-label="AI-Native SDLC loop: Spec, Contract, Build, Verify, Review, Ship">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#070a17"/>
+      <stop offset="1" stop-color="#0b1026"/>
+    </linearGradient>
+    <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset="0.5" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#34d399"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <path id="loop" d="M600 70 C 900 70, 1080 130, 1080 210 C 1080 290, 900 350, 600 350 C 300 350, 120 290, 120 210 C 120 130, 300 70, 600 70 Z"/>
+  </defs>
+  <style>
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    .sans { font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; }
+    .track { stroke-dasharray: 4 12; animation: flow 2s linear infinite; }
+    @keyframes flow { to { stroke-dashoffset: -64; } }
+    .stage rect { transition: none; }
+    .stage { animation: lit 9s ease-in-out infinite; opacity: .55; }
+    .s1 { animation-delay: 0s; } .s2 { animation-delay: 1.5s; } .s3 { animation-delay: 3s; }
+    .s4 { animation-delay: 4.5s; } .s5 { animation-delay: 6s; } .s6 { animation-delay: 7.5s; }
+    @keyframes lit { 0%, 22%, 100% { opacity: .55; } 6%, 14% { opacity: 1; } }
+    .core { animation: breathe 3s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+    @keyframes breathe { 0%,100% { transform: scale(1); opacity: .9; } 50% { transform: scale(1.06); opacity: 1; } }
+    .spin { animation: spin 18s linear infinite; transform-origin: 600px 210px; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } .stage { opacity: 1; } }
+  </style>
+
+  <rect width="1200" height="420" rx="20" fill="url(#bg)"/>
+  <rect x="0.5" y="0.5" width="1199" height="419" rx="20" fill="none" stroke="#1e293b"/>
+
+  <text class="mono" x="40" y="44" font-size="14" fill="#64748b">// the loop I run every day</text>
+
+  <use href="#loop" fill="none" stroke="#1e293b" stroke-width="10"/>
+  <use href="#loop" class="track" fill="none" stroke="url(#ring)" stroke-width="2.5"/>
+
+  <!-- comets riding the loop -->
+  <g filter="url(#glow)">
+    <circle r="7" fill="#22d3ee">
+      <animateMotion dur="9s" repeatCount="indefinite" rotate="auto"><mpath href="#loop"/></animateMotion>
+    </circle>
+    <circle r="5" fill="#a78bfa">
+      <animateMotion dur="9s" begin="-3s" repeatCount="indefinite"><mpath href="#loop"/></animateMotion>
+    </circle>
+    <circle r="4" fill="#34d399">
+      <animateMotion dur="9s" begin="-6s" repeatCount="indefinite"><mpath href="#loop"/></animateMotion>
+    </circle>
+  </g>
+
+  <!-- center core -->
+  <g class="spin" opacity="0.35">
+    <circle cx="600" cy="210" r="92" fill="none" stroke="#a78bfa" stroke-width="1" stroke-dasharray="2 8"/>
+  </g>
+  <g class="core">
+    <circle cx="600" cy="210" r="70" fill="#0f172a" stroke="url(#ring)" stroke-width="2"/>
+    <text class="sans" x="600" y="204" font-size="20" font-weight="800" text-anchor="middle" fill="#f8fafc">Human</text>
+    <text class="mono" x="600" y="226" font-size="12" text-anchor="middle" fill="#a5b4fc">intent + judgment</text>
+  </g>
+
+  <!-- opaque backings so the track never shows through a dimmed stage -->
+  <g fill="#0b1026">
+    <rect x="510" y="46" width="180" height="48" rx="12"/>
+    <rect x="880" y="100" width="200" height="48" rx="12"/>
+    <rect x="880" y="272" width="200" height="48" rx="12"/>
+    <rect x="510" y="326" width="180" height="48" rx="12"/>
+    <rect x="120" y="272" width="200" height="48" rx="12"/>
+    <rect x="120" y="100" width="200" height="48" rx="12"/>
+  </g>
+
+  <!-- stages -->
+  <g class="stage s1" transform="translate(510,46)">
+    <rect width="180" height="48" rx="12" fill="#0f172a" stroke="#22d3ee"/>
+    <text class="sans" x="90" y="22" font-size="15" font-weight="700" text-anchor="middle" fill="#67e8f9">01 · Spec</text>
+    <text class="mono" x="90" y="38" font-size="11" text-anchor="middle" fill="#94a3b8">intent → requirements</text>
+  </g>
+  <g class="stage s2" transform="translate(880,100)">
+    <rect width="200" height="48" rx="12" fill="#0f172a" stroke="#818cf8"/>
+    <text class="sans" x="100" y="22" font-size="15" font-weight="700" text-anchor="middle" fill="#a5b4fc">02 · Contract</text>
+    <text class="mono" x="100" y="38" font-size="11" text-anchor="middle" fill="#94a3b8">frozen acceptance criteria</text>
+  </g>
+  <g class="stage s3" transform="translate(880,272)">
+    <rect width="200" height="48" rx="12" fill="#0f172a" stroke="#a78bfa"/>
+    <text class="sans" x="100" y="22" font-size="15" font-weight="700" text-anchor="middle" fill="#c4b5fd">03 · Agents build</text>
+    <text class="mono" x="100" y="38" font-size="11" text-anchor="middle" fill="#94a3b8">parallel, in worktrees</text>
+  </g>
+  <g class="stage s4" transform="translate(510,326)">
+    <rect width="180" height="48" rx="12" fill="#0f172a" stroke="#f472b6"/>
+    <text class="sans" x="90" y="22" font-size="15" font-weight="700" text-anchor="middle" fill="#f9a8d4">04 · Verify</text>
+    <text class="mono" x="90" y="38" font-size="11" text-anchor="middle" fill="#94a3b8">auditors + tests + UI QA</text>
+  </g>
+  <g class="stage s5" transform="translate(120,272)">
+    <rect width="200" height="48" rx="12" fill="#0f172a" stroke="#fbbf24"/>
+    <text class="sans" x="100" y="22" font-size="15" font-weight="700" text-anchor="middle" fill="#fcd34d">05 · AI review</text>
+    <text class="mono" x="100" y="38" font-size="11" text-anchor="middle" fill="#94a3b8">evidence, not vibes</text>
+  </g>
+  <g class="stage s6" transform="translate(120,100)">
+    <rect width="200" height="48" rx="12" fill="#0f172a" stroke="#34d399"/>
+    <text class="sans" x="100" y="22" font-size="15" font-weight="700" text-anchor="middle" fill="#6ee7b7">06 · Ship</text>
+    <text class="mono" x="100" y="38" font-size="11" text-anchor="middle" fill="#94a3b8">deploy → observe → learn</text>
+  </g>
+</svg>
