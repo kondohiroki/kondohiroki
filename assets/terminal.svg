@@ -1,57 +1,95 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-label="An agentic coding session in a terminal">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="380" viewBox="0 0 1200 380" role="img" aria-label="An agentic coding session in a terminal">
+  <defs>
+    <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#059669"/>
+      <stop offset="1" stop-color="#6ee7b7"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="0.85" cy="0.1" r="0.7">
+      <stop offset="0" stop-color="#10b981" stop-opacity=".18"/>
+      <stop offset="1" stop-color="#10b981" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
   <style>
     .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 15px; }
-    .l { opacity: 0; animation: show 14s steps(1) infinite; }
-    @keyframes show { 0% { opacity: 0; } 100% { opacity: 1; } }
-    .l1 { animation-name: a1; } .l2 { animation-name: a2; } .l3 { animation-name: a3; } .l4 { animation-name: a4; }
-    .l5 { animation-name: a5; } .l6 { animation-name: a6; } .l7 { animation-name: a7; } .l8 { animation-name: a8; }
-    .l9 { animation-name: a9; } .l10 { animation-name: a10; }
-    @keyframes a1  { 0%, 3%  { opacity: 0; } 4%, 96%  { opacity: 1; } 97%, 100% { opacity: 0; } }
+    .l { opacity: 0; animation-duration: 16s; animation-iteration-count: infinite; animation-timing-function: steps(1); }
+    .l2 { animation-name: a2; } .l3 { animation-name: a3; } .l4 { animation-name: a4; } .l5 { animation-name: a5; }
+    .l6 { animation-name: a6; } .l7 { animation-name: a7; } .l8 { animation-name: a8; } .l9 { animation-name: a9; } .l10 { animation-name: a10; }
     @keyframes a2  { 0%, 12% { opacity: 0; } 13%, 96% { opacity: 1; } 97%, 100% { opacity: 0; } }
-    @keyframes a3  { 0%, 20% { opacity: 0; } 21%, 96% { opacity: 1; } 97%, 100% { opacity: 0; } }
-    @keyframes a4  { 0%, 28% { opacity: 0; } 29%, 96% { opacity: 1; } 97%, 100% { opacity: 0; } }
-    @keyframes a5  { 0%, 36% { opacity: 0; } 37%, 96% { opacity: 1; } 97%, 100% { opacity: 0; } }
-    @keyframes a6  { 0%, 44% { opacity: 0; } 45%, 96% { opacity: 1; } 97%, 100% { opacity: 0; } }
-    @keyframes a7  { 0%, 54% { opacity: 0; } 55%, 96% { opacity: 1; } 97%, 100% { opacity: 0; } }
-    @keyframes a8  { 0%, 64% { opacity: 0; } 65%, 96% { opacity: 1; } 97%, 100% { opacity: 0; } }
-    @keyframes a9  { 0%, 74% { opacity: 0; } 75%, 96% { opacity: 1; } 97%, 100% { opacity: 0; } }
+    @keyframes a3  { 0%, 19% { opacity: 0; } 20%, 96% { opacity: 1; } 97%, 100% { opacity: 0; } }
+    @keyframes a4  { 0%, 26% { opacity: 0; } 27%, 96% { opacity: 1; } 97%, 100% { opacity: 0; } }
+    @keyframes a5  { 0%, 26% { opacity: 0; } 27%, 96% { opacity: 1; } 97%, 100% { opacity: 0; } }
+    @keyframes a6  { 0%, 26% { opacity: 0; } 27%, 96% { opacity: 1; } 97%, 100% { opacity: 0; } }
+    @keyframes a7  { 0%, 58% { opacity: 0; } 59%, 96% { opacity: 1; } 97%, 100% { opacity: 0; } }
+    @keyframes a8  { 0%, 66% { opacity: 0; } 67%, 96% { opacity: 1; } 97%, 100% { opacity: 0; } }
+    @keyframes a9  { 0%, 76% { opacity: 0; } 77%, 96% { opacity: 1; } 97%, 100% { opacity: 0; } }
     @keyframes a10 { 0%, 84% { opacity: 0; } 85%, 96% { opacity: 1; } 97%, 100% { opacity: 0; } }
-    .typing { clip-path: inset(0 100% 0 0); animation: type 14s steps(44) infinite; }
-    @keyframes type { 0% { clip-path: inset(0 100% 0 0); } 3%, 96% { clip-path: inset(0 0 0 0); } 97%, 100% { clip-path: inset(0 100% 0 0); } }
+    /* progress bars fill in parallel, at different speeds */
+    .p { transform-box: fill-box; transform-origin: left; transform: scaleX(0); animation: 16s linear infinite; }
+    .p1 { animation-name: p1; } .p2 { animation-name: p2; } .p3 { animation-name: p3; }
+    @keyframes p1 { 0%, 27% { transform: scaleX(0); } 44%, 96% { transform: scaleX(1); } 97%, 100% { transform: scaleX(0); } }
+    @keyframes p2 { 0%, 27% { transform: scaleX(0); } 52%, 96% { transform: scaleX(1); } 97%, 100% { transform: scaleX(0); } }
+    @keyframes p3 { 0%, 27% { transform: scaleX(0); } 57%, 96% { transform: scaleX(1); } 97%, 100% { transform: scaleX(0); } }
+    .ok { opacity: 0; animation: 16s steps(1) infinite; }
+    .o1 { animation-name: o1; } .o2 { animation-name: o2; } .o3 { animation-name: o3; }
+    @keyframes o1 { 0%, 44% { opacity: 0; } 45%, 96% { opacity: 1; } 97%, 100% { opacity: 0; } }
+    @keyframes o2 { 0%, 52% { opacity: 0; } 53%, 96% { opacity: 1; } 97%, 100% { opacity: 0; } }
+    @keyframes o3 { 0%, 57% { opacity: 0; } 58%, 96% { opacity: 1; } 97%, 100% { opacity: 0; } }
+    .spin { animation: spin .9s linear infinite; transform-box: fill-box; transform-origin: center; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .typing { clip-path: inset(0 100% 0 0); animation: type 16s steps(48) infinite; }
+    @keyframes type { 0% { clip-path: inset(0 100% 0 0); } 10%, 96% { clip-path: inset(0 0 0 0); } 97%, 100% { clip-path: inset(0 100% 0 0); } }
     .caret { animation: blink 1s steps(1) infinite; }
     @keyframes blink { 50% { opacity: 0; } }
-    .spin { animation: spin 1s linear infinite; transform-box: fill-box; transform-origin: center; }
-    @keyframes spin { to { transform: rotate(360deg); } }
+    .shine { animation: shine 2.4s ease-in-out infinite; }
+    @keyframes shine { 0%,100% { opacity: .55; } 50% { opacity: 1; } }
     @media (prefers-reduced-motion: reduce) {
       * { animation: none !important; }
-      .l { opacity: 1; } .typing { clip-path: none; }
+      .l, .ok { opacity: 1; } .typing { clip-path: none; } .p { transform: none; }
     }
   </style>
 
-  <rect width="1200" height="360" rx="16" fill="#0a0e1a"/>
-  <rect x="0.5" y="0.5" width="1199" height="359" rx="16" fill="none" stroke="#1e293b"/>
-  <path d="M0 16 a16 16 0 0 1 16 -16 H1184 a16 16 0 0 1 16 16 V40 H0 Z" fill="#111827"/>
+  <rect width="1200" height="380" rx="16" fill="#030b08"/>
+  <rect width="1200" height="380" rx="16" fill="url(#halo)"/>
+  <rect x="0.5" y="0.5" width="1199" height="379" rx="16" fill="none" stroke="#10b981" stroke-opacity=".35"/>
+  <path d="M0 16 a16 16 0 0 1 16 -16 H1184 a16 16 0 0 1 16 16 V40 H0 Z" fill="#06150f"/>
   <circle cx="24" cy="20" r="6" fill="#f87171"/>
   <circle cx="44" cy="20" r="6" fill="#fbbf24"/>
   <circle cx="64" cy="20" r="6" fill="#34d399"/>
-  <text class="mono" x="600" y="25" text-anchor="middle" fill="#64748b" font-size="13">ki@bangkok — agent session</text>
+  <text class="mono" x="600" y="25" text-anchor="middle" fill="#4b6b5f" font-size="13">ki@bangkok — agent session</text>
+  <g class="shine"><circle cx="1150" cy="20" r="4" fill="#34d399"/><text class="mono" x="1140" y="25" text-anchor="end" fill="#34d399" font-size="12">live</text></g>
 
   <g transform="translate(28,76)">
     <g class="typing">
-      <text class="mono" x="0" y="0" fill="#e2e8f0"><tspan fill="#34d399">❯</tspan> ship the feature — contract first, then build it</text>
+      <text class="mono" x="0" y="0" fill="#ecfdf5"><tspan fill="#34d399">❯</tspan> ship the feature — contract first, then build it</text>
+    </g>
+    <text class="mono l l2" x="0" y="32" fill="#6ee7b7">✦ contract frozen  <tspan fill="#4b6b5f">· 7 acceptance criteria · risk: medium</tspan></text>
+    <text class="mono l l3" x="0" y="58" fill="#2dd4bf">⎇ spawning agents  <tspan fill="#4b6b5f">· in parallel, one worktree each</tspan></text>
+
+    <g class="l l4" transform="translate(22,72)">
+      <text class="mono" x="0" y="14" fill="#d1fae5">├─ api-dev</text>
+      <rect x="150" y="3" width="360" height="12" rx="6" fill="#06261c"/>
+      <rect class="p p1" x="150" y="3" width="360" height="12" rx="6" fill="url(#bar)"/>
+      <text class="mono ok o1" x="526" y="14" fill="#34d399">✔ routes + migrations + tests</text>
+    </g>
+    <g class="l l5" transform="translate(22,98)">
+      <text class="mono" x="0" y="14" fill="#d1fae5">├─ web-dev</text>
+      <rect x="150" y="3" width="360" height="12" rx="6" fill="#06261c"/>
+      <rect class="p p2" x="150" y="3" width="360" height="12" rx="6" fill="url(#bar)"/>
+      <text class="mono ok o2" x="526" y="14" fill="#34d399">✔ UI verified in light + dark</text>
+    </g>
+    <g class="l l6" transform="translate(22,124)">
+      <text class="mono" x="0" y="14" fill="#d1fae5">└─ auditors</text>
+      <rect x="150" y="3" width="360" height="12" rx="6" fill="#06261c"/>
+      <rect class="p p3" x="150" y="3" width="360" height="12" rx="6" fill="url(#bar)"/>
+      <text class="mono ok o3" x="526" y="14" fill="#34d399">✔ permissions · cost · schema · compat</text>
     </g>
 
-    <text class="mono l l2" x="0" y="30" fill="#a78bfa">✦ contract frozen  <tspan fill="#64748b">· 7 acceptance criteria · risk: medium</tspan></text>
-    <text class="mono l l3" x="0" y="56" fill="#67e8f9">⎇ spawning agents  <tspan fill="#64748b">· api-dev  web-dev  test-generator</tspan></text>
-    <text class="mono l l4" x="22" y="82" fill="#cbd5e1">├─ api-dev    <tspan fill="#34d399">✔</tspan> routes + migrations + tests</text>
-    <text class="mono l l5" x="22" y="108" fill="#cbd5e1">├─ web-dev    <tspan fill="#34d399">✔</tspan> UI verified in light + dark</text>
-    <text class="mono l l6" x="22" y="134" fill="#cbd5e1">└─ auditors   <tspan fill="#34d399">✔</tspan> permissions · cost · schema · compat</text>
-    <text class="mono l l7" x="0" y="164" fill="#fbbf24">◎ AI review    <tspan fill="#64748b">· 0 blocking findings on current head</tspan></text>
-    <text class="mono l l8" x="0" y="190" fill="#f9a8d4">▲ CI           <tspan fill="#34d399">green</tspan><tspan fill="#64748b"> · typecheck · lint · unit · e2e</tspan></text>
-    <text class="mono l l9" x="0" y="220" fill="#6ee7b7">🚀 ready to merge  <tspan fill="#64748b">· a human gives the final 👍</tspan></text>
+    <text class="mono l l7" x="0" y="184" fill="#a7f3d0">◎ AI review    <tspan fill="#4b6b5f">· 0 blocking findings on current head</tspan></text>
+    <text class="mono l l8" x="0" y="210" fill="#a7f3d0">▲ CI           <tspan fill="#34d399">green</tspan><tspan fill="#4b6b5f"> · typecheck · lint · unit · e2e</tspan></text>
+    <text class="mono l l9" x="0" y="242" fill="#6ee7b7" font-weight="700">🚀 ready to merge  <tspan fill="#4b6b5f" font-weight="400">· a human gives the final 👍</tspan></text>
     <g class="l l10">
-      <text class="mono" x="0" y="256" fill="#e2e8f0"><tspan fill="#34d399">❯</tspan> </text>
-      <rect class="caret" x="20" y="242" width="9" height="18" fill="#22d3ee"/>
+      <text class="mono" x="0" y="276" fill="#34d399">❯</text>
+      <rect class="caret" x="20" y="262" width="9" height="18" fill="#34d399"/>
     </g>
   </g>
 </svg>
